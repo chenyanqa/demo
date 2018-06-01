@@ -24,17 +24,18 @@ from PIL import Image,ImageDraw,ImageFont
 
 
 #方法2：通过函数 (注意函数名或者类名可以跟python文件名相同)
-def add_num(img):
-	draw=ImageDraw.Draw(img)
-	myfont = ImageFont.truetype('C:/windows/fonts/Arial.ttf',size=30)
-	fillcolor = "#ff0000"
-	width,height=img.size
-	draw.text((width-20,0),'4',fill=fillcolor,font=myfont)
-	img.show()
-	img.save('result2.png','png')
-	#return 0
-
-if __name__=='__main__':
-	image=Image.open(r"D:\cy\ demo\demo1.jpg",'r').convert('RGB')
-	add_num(image)
+# def add_num(img):
+# 	draw=ImageDraw.Draw(img)
+# 	myfont = ImageFont.truetype('C:/windows/fonts/Arial.ttf',size=30)
+# 	fillcolor = "#ff0000"
+# 	width,height=img.size
+# 	draw.text((width-20,0),'4',fill=fillcolor,font=myfont)
+# 	img.show()
+# 	img.save('result2.png','png')
+# 	#return 0
+#
+# if __name__=='__main__':
+# 	image=Image.open(r"D:\cy\ demo\demo1.jpg",'r').convert('RGB')
+# 	add_num(image)
+#
 
