@@ -39,3 +39,23 @@ from PIL import Image,ImageDraw,ImageFont
 # 	add_num(image)
 #
 
+
+import string
+import random
+
+# list=[]
+# for i in range(5):
+#     list.append(random.choice(string.ascii_letters + string.digits))
+#
+# print(''.join(list))
+
+
+
+# s1=''.join(random.choice(string.ascii_letters + string.digits) for x in range(5))
+# print(s1)
+
+
+
+#print(''.join(random.choice(string.ascii_letters + string.digits)))
+
+

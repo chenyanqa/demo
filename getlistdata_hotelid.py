@@ -3,6 +3,7 @@
 
 import requests
 
+
 #通过酒店id 获取gethoteldata接口的数据
 def get_hoteldata(hotelid):
     url = 'https://xapi.elong.com/xcxdetail/gethoteldata/'
@@ -38,7 +39,7 @@ def get_listdata(hotelname):
 
 def read_file(path):
     hotel_ids=[]
-    with open(path,'r') as f:
+    with open(path,'r+') as f:
         for line in f.readlines():
             hotel_ids.append(line.strip())
 
