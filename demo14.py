@@ -15,31 +15,45 @@
 
 import csv
 import json
-list=[]
-with open('/Users/user/Documents/student.txt','rb') as f:
-    #print(type(f.read().decode())) #<class 'str'>
-    #print(type(json.loads(f.read().decode()))) #<class 'dict'>
-    #print(json.loads(f.read().decode()))
-    # dict=json.loads(f.read().decode())
-    # print(list)
-
-    # #print(f.readlines())
-    # for line in f.readlines():
-    #     #print(line.decode().strip())
-    #     list.append(line.decode().strip())
-    dict = json.loads(f.read().decode())
-    print(dict)
-
-    for i in dict:
-        list.append(i.keys)
-        list.append(i['value'])
-
-
-print(list)
+# list=[]
+# with open('/Users/user/Documents/student.txt','rb') as f:
+#     #print(type(f.read().decode())) #<class 'str'>
+#     #print(type(json.loads(f.read().decode()))) #<class 'dict'>
+#     #print(json.loads(f.read().decode()))
+#     # dict=json.loads(f.read().decode())
+#     # print(list)
+#
+#     # #print(f.readlines())
+#     # for line in f.readlines():
+#     #     #print(line.decode().strip())
+#     #     list.append(line.decode().strip())
+#     dict = json.loads(f.read().decode())
+#     print(dict)
+#
+#     for i in dict:
+#         list.append(i.keys)
+#         list.append(i['value'])
+#
+#
+# print(list)
 
 
 # with open('/Users/user/Documents/student.csv','wb') as f:
 #     f_csv=csv.writer(f)
 #     f_csv.write
 #
+
+
+
+
+import os
+import xlrd,xlwt,json
+
+file_path = '/Users/user/Documents/demo/test.xls'
+f = xlwt.Workbook(encoding='utf-8')
+sheet = f.add_sheet('sheet1')
+
+
+
+
 
