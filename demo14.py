@@ -131,3 +131,12 @@ workbook.save('/Users/user/Documents/demo/student1.xls')
 
 
 
+# import chardet
+# f = open('/Users/user/Documents/demo/student1.csv','rb')
+# data=f.read()
+# print(data)
+# print(chardet.detect(data))
+
+
+
+
